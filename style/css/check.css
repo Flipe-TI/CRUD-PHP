@@ -1,0 +1,98 @@
+
+/*NÃO AVALIAR ESTE CODIGO*/
+/*CODIGO APARTIR DAQUI FOI RETIRADO https://codepen.io/leimapapa/pen/pqMoRW*/
+
+.here{
+  width: 200px;
+  height: 250px;
+}
+.box{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    height:100px;
+    width:100px;
+    cursor:pointer;
+  }
+  .smallCheck{
+    position:absolute;
+    top:63%;
+    left:38%;
+    transform:translate(-50%,-50%) rotate(40deg);
+    height:10%;
+    width:35%;
+    border-radius:5vw;
+    background-color:rgba(0,234,0,1);
+    animation:smallCheck 700ms linear;
+  }
+  .bigCheck{
+    position:absolute;
+    top:54%;
+    left:61.5%;
+    transform:translate(-50%,-50%) rotate(-50deg);
+    height:10%;
+    width:52%;
+    border-radius:5vw;
+    background-color:rgba(0,234,0,1);
+    animation:bigCheck 700ms linear;
+  }
+  .circle{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    height:90%;
+    width:90%;
+    border-radius:100vw;
+    border-left:solid 10px rgba(0,234,0);
+    border-right:solid 10px rgba(0,234,0);
+    border-top:solid 10px rgba(0,234,0);
+    border-bottom:solid 10px rgba(0,234,0);
+    animation:spin 700ms linear;
+  }
+  @keyframes spin{
+    0%{
+      transform:translate(-50%,-50%) rotate(180deg);
+      border-left:solid 10px rgba(0,0,0,0);
+    }
+    50%{
+      transform:translate(-50%,-50%) rotate(50deg);
+    }
+    100%{
+      transform:translate(-50%,-50%) rotate(50deg);
+      border-left:solid 10px rgb(0,234,0);
+    }
+  }
+  @keyframes smallCheck{
+    0%{
+      width:0px;
+      top:43%;
+      left:2%;
+      transform:translate(-50%,-50%) rotate(40deg);
+    }
+    50%{
+      width:5px;
+      top:43%;
+      left:2%;
+      transform:translate(-50%,-50%) rotate(40deg);
+      background-color:rgba(0,234,0,0.7);
+    }
+    100%{
+      width:35%;
+      background-color:rgba(0,234,0,0.7);
+    }
+  }
+  @keyframes bigCheck{
+    0%{
+      width:0px;
+    }
+    80%{
+      width:0px;
+    }
+    100%{
+      top:54%;
+      left:61.5%;
+      transform:translate(-50%,-50%) rotate(-50deg);
+    }
+  }

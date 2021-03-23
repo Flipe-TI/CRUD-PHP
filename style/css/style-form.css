@@ -1,0 +1,489 @@
+
+:root{
+    background-color:#2B4082;
+}
+
+#menu {
+	background: #292c2f;
+    z-index: 1;
+    position: relative;
+	color: #bbb;
+	height: 60px;
+    margin-top: 10px;
+    margin-bottom: 90px;
+    margin-left: 20px;
+    margin-right: 20px;
+	padding-left: 18px;
+	border-radius: 10px;
+    
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+}
+#menu .logo{
+    border-radius: 50px;
+    padding: 1px; 
+    float: left;
+    margin-top:10px;
+    border: 3px solid #3E8CBB;
+}
+#menu li {
+	float: right;
+	display: inline;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 60px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #bbb;
+	font-size: 16px;
+}
+#menu a.dropdown-arrow:after {
+	content: "\23F7";
+	margin-left: 5px;
+}
+#menu li a:hover {
+	color: #FFF;
+	background: #2B4082;
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #444444;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #bbb;
+	font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+	display: block
+}
+#menu ul.sub-menus a:hover{
+	background: #292c2f;
+	color: #FFF;
+}
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+    margin-bottom: 300px;
+}
+
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+    position: relative;
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+    height: 160px;
+}
+@media screen and (min-height: 820px){
+    .footer {
+    position: absolute;
+    }
+}
+@media screen and (max-height: 600px){
+    .footer {
+    position: relative;
+    }
+}
+@media screen and (max-width: 800px){
+    .footer {
+    position: relative;
+    }
+}
+
+footer {
+  padding-top: 20px;
+  background-color: #292c2f;
+  color: #bbb;
+}
+
+footer a {
+  color: #999;
+  text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+  color: #2B4082;
+  text-decoration:none;
+  border-bottom:1px dotted #999;
+}
+
+footer .form-control {
+    background-color: #1f2022;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    border: none;
+    resize: none;
+    color: #d1d2d2;
+    padding: 0.7em 1em;
+}
+
+@media screen and (max-width: 800px){
+    body {
+        margin-bottom: 700px;
+      }
+      .footer {
+        height: 300px;
+      }
+	#menu {position:relative}
+    #menu .logo{margin: 0px auto; float:none;width: 42px; height:40px; border-radius: 100px;}
+    #menu i.logo { text-align: center; }
+	#menu ul {background:#292c2f;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:white}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}
+
+.roww{
+    display: -ms-flexbox;
+    display: flex;
+    width: 230px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+.slideUpBtn1 {
+    padding: 12px 24px;
+    float: right;
+    background-color: transparent;
+    color:white;
+    border: 2px solid #2B4082;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(1,.15,.34,.92);
+    margin-right: 10px;
+}
+
+.slideUpBtn1 span {
+    display: inline-block;
+    transition: inherit;
+    color: hsl(243, 80%, 62%);
+}
+
+.slideUpBtn1:hover span {
+    opacity: 0;
+    transform: translateY(-100%)
+}
+
+.slideUpBtn1::before {
+    content: "";
+    /* background-color: #3E8CBB; */
+    background-color: #2B4082; 
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(100%);
+    transition: inherit;
+    width: 100%;
+    transition: transform 0.5s cubic-bezier(1,.15,.34,.92)
+}
+
+.slideUpBtn1::after {
+    content: 'Cadastrar';
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: inherit;
+    transform: translateY(100%);
+    width: 100%;
+
+}
+
+.slideUpBtn1:hover::before {
+    transform: translateY(0) scale(3);
+    transition-delay: .025s;
+}
+
+.slideUpBtn1:hover::after {
+    opacity: 1;
+    color: hsl(222, 100%, 95%);
+    transform: translateY(0);
+}
+
+.slideUpBtnu {
+    padding: 12px 24px;
+    float: right;
+    background-color: transparent;
+    color:white;
+    border: 2px solid #2B4082;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(1,.15,.34,.92);
+    margin-right: 10px;
+}
+
+.slideUpBtnu span {
+    display: inline-block;
+    transition: inherit;
+    color: hsl(243, 80%, 62%);
+}
+
+.slideUpBtnu:hover span {
+    opacity: 0;
+    transform: translateY(-100%)
+}
+
+.slideUpBtnu::before {
+    content: "";
+    background-color: #2B4082; 
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(100%);
+    transition: inherit;
+    width: 100%;
+    transition: transform 0.5s cubic-bezier(1,.15,.34,.92)
+}
+
+.slideUpBtnu::after {
+    content: 'Atualizar';
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: inherit;
+    transform: translateY(100%);
+    width: 100%;
+
+}
+
+.slideUpBtnu:hover::before {
+    transform: translateY(0) scale(3);
+    transition-delay: .025s;
+}
+
+.slideUpBtnu:hover::after {
+    opacity: 1;
+    color: hsl(222, 100%, 95%);
+    transform: translateY(0);
+}
+.slideUpBtn2 {
+    padding: 12px 24px;
+    background-color: transparent;
+    float: right;
+    color:white;
+    border: 2px solid rgb(194, 4, 4);
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(1,.15,.34,.92)
+}
+
+.slideUpBtn2 span {
+    display: inline-block;
+    transition: inherit;
+    color: hsl(243, 80%, 62%);
+}
+
+.slideUpBtn2:hover span {
+    opacity: 0;
+    transform: translateY(-100%)
+}
+
+.slideUpBtn2::before {
+    content: "";
+    background-color: rgb(194, 4, 4);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(100%);
+    transition: inherit;
+    width: 100%;
+    transition: transform 0.5s cubic-bezier(1,.15,.34,.92)
+}
+
+.slideUpBtn2::after {
+    content: 'Limpar';
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: inherit;
+    transform: translateY(100%);
+    width: 100%;
+
+}
+
+.slideUpBtn2:hover::before {
+    transform: translateY(0) scale(3);
+    transition-delay: .025s;
+}
+
+.slideUpBtn2:hover::after {
+    opacity: 1;
+    color: hsl(222, 100%, 95%);
+    transform: translateY(0);
+}
+
+.slideUpBtnd {
+    padding: 12px 24px;
+    float: right;
+    background-color: transparent;
+    color:white;
+    border: 2px solid #2B4082;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(1,.15,.34,.92);
+    margin-right: 10px;
+}
+
+.slideUpBtnd span {
+    display: inline-block;
+    transition: inherit;
+    color: hsl(243, 80%, 62%);
+}
+
+.slideUpBtnd:hover span {
+    opacity: 0;
+    transform: translateY(-100%)
+}
+
+.slideUpBtnd::before {
+    content: "";
+    /* background-color: #3E8CBB; */
+    background-color: #2B4082; 
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(100%);
+    transition: inherit;
+    width: 100%;
+    transition: transform 0.5s cubic-bezier(1,.15,.34,.92)
+}
+
+.slideUpBtnd::after {
+    content: 'Deletar';
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: inherit;
+    transform: translateY(100%);
+    width: 100%;
+
+}
+
+.slideUpBtnd:hover::before {
+    transform: translateY(0) scale(3);
+    transition-delay: .025s;
+}
+
+.slideUpBtnd:hover::after {
+    opacity: 1;
+    color: hsl(222, 100%, 95%);
+    transform: translateY(0);
+}
+
+.body{
+    width: 100%;
+    height: 400px; 
+    background-color:#2B4082;
+    
+}
+
+.container h5{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{ 
+    background-color: #292c2f;
+    color: #bbb;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 50px;
+    padding: 20px;
+    text-align: justify;
+}
+.container p{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wave {
+    display: block;
+    position: absolute;
+    top: -2px;
+    height: 500px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 2859 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(255, 255, 255, 1)" d="M 0 200 C 165 200 165 353 330 353 L 330 353 L 330 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 329 353 C 567 353 567 204 805 204 L 805 204 L 805 0 L 329 0 Z" stroke-width="0"></path> <path fill="rgba(255, 255, 255, 1)" d="M 804 204 C 1035.5 204 1035.5 321 1267 321 L 1267 321 L 1267 0 L 804 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1266 321 C 1571 321 1571 189 1876 189 L 1876 189 L 1876 0 L 1266 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 1875 189 C 2099.5 189 2099.5 301 2324 301 L 2324 301 L 2324 0 L 1875 0 Z" stroke-width="0"></path><path fill="rgba(255, 255, 255, 1)" d="M 2323 301 C 2591 301 2591 200 2859 200 L 2859 200 L 2859 0 L 2323 0 Z" stroke-width="0"></path></svg>');
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   
+
+   @media (max-width:2858px) {
+    .wave {
+      background-size: contain;
+    }
+   }
+   
