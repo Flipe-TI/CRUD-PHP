@@ -1,21 +1,21 @@
 # CRUD-PHP
 
-    ## About
+## About
 
-        ### Presentation
+### Presentation
 
-            CRUD (Create, Read, Update, Delete) in PHP for storing Clients' information and addresses. The objective of this project is to put my knowledge in web development into practice, in addition to exposing my mastery of the area.
+CRUD (Create, Read, Update, Delete) in PHP for storing Clients' information and addresses. The objective of this project is to put my knowledge in web development into practice, in addition to exposing my mastery of the area.
 
-        ### Image
+### Image
 
-        ![image](https://user-images.githubusercontent.com/68780083/112770461-2f6b6f80-8ffd-11eb-8dec-920cd5afa93c.png)
+![image](https://user-images.githubusercontent.com/68780083/112770461-2f6b6f80-8ffd-11eb-8dec-920cd5afa93c.png)
 
-    ## Install
+## Install
 
-        ### Requirements
+### Requirements
 
-        PHP   | MariaDB | Apache
-        ;---------; | ;---------; | ;---------;
-        7.? | 10.? | 2.?
+PHP   | MariaDB | Apache
+;---------; | ;---------; | ;---------;
+7.? | 10.? | 2.?
 
-    ## Use  
+## Use  
