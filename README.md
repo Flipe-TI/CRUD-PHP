@@ -15,7 +15,7 @@ CRUD (Create, Read, Update, Delete) in PHP for storing Clients' information and 
 ### Requirements
 
 PHP   | MariaDB | Apache
-;---------; | ;---------; | ;---------;
+:---------: | :---------: | :---------:
 7.? | 10.? | 2.?
 
 ## Use  
