@@ -14,8 +14,8 @@
 
         ### Requirements
 
-        PHP   | Valor do exemplo
-        ;---------; | ------
-        Exemplo 1 | R$ 10
+        PHP   | MariaDB | Apache
+        ;---------; | ;---------; | ;---------;
+        7.? | 10.? | 2.?
 
     ## Use  
