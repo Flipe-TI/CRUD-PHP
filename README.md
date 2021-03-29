@@ -18,4 +18,8 @@ PHP   | MariaDB | Apache
 :---------: | :---------: | :---------:
 7.? | 10.? | 2.?
 
-## Use  
+## Use
+
+1.Install XAMPP / WAMPP or other means of installation for the requirements mentioned above.
+
+2.Move the files to the destination folder of your apache installation, so that you can access them on your localhost.
